@@ -42,7 +42,7 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean, setIsM
           animate={{ opacity: 1, x: 0 }}
           className="pointer-events-auto"
         >
-          <a href="#home" className="font-display font-black text-2xl tracking-tighter">
+          <a href="#home" className="font-display font-black text-lg md:text-2xl tracking-tighter">
             WANDRI<span className="text-brand-gold">LOPES</span>
           </a>
         </motion.div>
@@ -56,7 +56,7 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean, setIsM
         </nav>
 
         <div className="flex items-center gap-8 pointer-events-auto">
-          <button className="luxury-label border border-white/20 px-6 py-2 rounded-full hover:bg-white hover:text-black transition-all">
+          <button className="hidden lg:block luxury-label border border-white/20 px-6 py-2 rounded-full hover:bg-white hover:text-black transition-all">
             CONSULTORIA
           </button>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden">
@@ -110,7 +110,7 @@ const Hero = () => {
         <img 
           src="https://images.unsplash.com/photo-1549476464-37392f717541?auto=format&fit=crop&q=80&w=2000" 
           alt="High Performance Background"
-          className="w-full h-full object-cover grayscale brightness-[0.3]"
+          className="w-full h-full object-cover grayscale brightness-[0.45] md:brightness-[0.3]"
           referrerPolicy="no-referrer"
         />
       </motion.div>
@@ -148,7 +148,7 @@ const Hero = () => {
             </motion.span>
           </div>
 
-          <h1 className="text-3xl md:text-[clamp(3rem,7vw,8rem)] font-display font-black leading-[0.85] tracking-tighter mb-16 flex flex-col">
+          <h1 className="text-4xl md:text-[clamp(3rem,7vw,8rem)] font-display font-black leading-[0.85] tracking-tighter mb-24 flex flex-col">
             <span className="block translate-x-[-0.02em]">DESIGNER</span>
             <span className="block text-white/30 italic font-medium translate-x-[0.05em] h-[1.1em]">DE FÍSICOS.</span>
           </h1>
